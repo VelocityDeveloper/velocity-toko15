@@ -14,7 +14,7 @@
             </div>
         </div>
     <?php endif; ?>
-    <div class="kontak-seller bg-theme p-2 text-center"><?php echo do_shortcode('[kontak style="false"]'); ?></div>
+    <div class="kontak-seller bg-theme p-2 text-center"><?php echo velocity_toko15_kontak('btn btn-sm btn-link', false); ?></div>
     <div class="site-info text-center py-3">
         <small>
             © <?php echo date("Y"); ?> <?php echo get_bloginfo('name'); ?>. All Rights Reserved.

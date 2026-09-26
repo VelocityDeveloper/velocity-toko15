@@ -1,19 +1,19 @@
 <?php
-$slider_home = velocitytheme_option('slider_home');
+$slider_home = velocity_toko15_slider();
 $ns = 1;
 ?>
 
-<?php if ($slider_home) : ?>
-    <div id="carouselHome" class="carousel slide mb-3" data-bs-ride="carousel">
+<?php if($slider_home): ?>
+    <div id="carouselHome" class="carousel slide mb-3">
         <div class="carousel-inner">
-            <?php foreach ($slider_home as $key => $data) : ?>
-                <div class="<?php echo $ns == 1 ? 'carousel-item active' : 'carousel-item'; ?>" data-bs-interval="3000">
-                    <div class="ratio ratio-21x9">
-                        <img class="lazyload w-100" data-src="<?php echo $data['imgslider']; ?>" alt="Slider <?php echo $ns; ?>" loading="lazy">
+            <?php foreach( $slider_home as $key => $data): ?>
+                <div class="<?php echo $ns==1?'carousel-item active':'carousel-item'; ?>" data-bs-interval="3000">
+                    <div>
+                        <img class="w-100" src="<?php echo esc_url($data); ?>" alt="Slider <?php echo $ns; ?>" loading="lazy">
                     </div>
                 </div>
-            <?php
-                $ns++;
+            <?php 
+            $ns++;
             endforeach;
             ?>
         </div>
