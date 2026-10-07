@@ -29,8 +29,6 @@ Arsip produk (`/produk/`, kategori, merek, pencarian produk): kolom kiri berisi 
 berpindah kategori + Filter & Urutkan VD Store (tanpa daftar kategori). Detail produk: Tambah Keranjang +
 tombol Whatsapp (nomor WA toko VD Store). Template **Velocity Toko Pricelist**. Halaman Katalog & Profil
 Saya selalu tanpa sidebar.
-Halaman Berita (Posts Page di Settings > Reading) memakai tampilan arsip (`home.php` → `archive.php`):
-hanya daftar berita berjudul nama halaman, tanpa slider/produk beranda.
 
 ### Customizer
 Appearance > Customize > **Velocity Toko 15**: Warna (utama, sekunder), Popup Sambutan (aktif/nonaktif +
